@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Puncak Seminar Ilmiah MIPA & TIK Kelas X — SMA Islam Al-Ma’ruf</title>
-<meta name="description" content="Transformasi Sains dan Teknologi: Dari Gagasan Menjadi Inovasi di GOR Moh Thaha, Jakarta Timur, 1–3 September 2025, pukul 07:30–13:00 WIB.">
+<meta name="description" content="Transformasi Sains dan Teknologi: Dari Gagasan Menjadi Inovasi di GOR Moh Thaha, Jakarta Timur, 3–4 September 2025, pukul 07:30–13:00 WIB.">
 <meta name="theme-color" content="#0b3d2e">
 
 <!-- OG (diisi oleh JS saat load) -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Puncak Seminar Ilmiah MIPA & TIK Kelas X">
-<meta property="og:description" content="Transformasi Sains dan Teknologi: Dari Gagasan Menjadi Inovasi — 1–3 September 2025 • GOR Moh Thaha, Jakarta Timur">
+<meta property="og:description" content="Transformasi Sains dan Teknologi: Dari Gagasan Menjadi Inovasi — 3–4 September 2025 • GOR Moh Thaha, Jakarta Timur">
 <meta property="og:url" content="" id="ogUrl">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -131,8 +131,8 @@ blockquote.dua{margin:0;padding:10px 14px;border-left:4px solid var(--accent);ba
     <!-- ===== COVER ===== -->
     <section id="cover" class="cover">
       <img src="logo.png" alt="Logo Al-Ma'ruf" class="logo-cover" loading="eager">
-  
-      <h2 class="title">SEMINAR ILMIAH<br>SMA ISLAM AL MA'RUF</h2>
+      <div class="label">UNDANGAN DIGITAL</div>
+      <h2 class="title">SEMINAR IMLIAH<br>SMA ISLAM AL MA'RUF</h2>
       <div class="subtitle" id="schoolSub">SMA Islam Al-Ma’ruf TP 2025/2026</div>
       <div class="cta">
         <a id="openInviteBtn" class="button" href="#details">
@@ -167,12 +167,6 @@ blockquote.dua{margin:0;padding:10px 14px;border-left:4px solid var(--accent);ba
             </svg>
             JADWAL KELOMPOK
           </a>
-          <a class="button secondary" id="btnPuncak" href="#puncak">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 20h16M6 20l5-14 3 8 2-5 2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            PUNCAK SEMINAR
-          </a>
 
           <a class="button secondary" id="btnMap" href="#" target="_blank" rel="noopener">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -197,7 +191,7 @@ blockquote.dua{margin:0;padding:10px 14px;border-left:4px solid var(--accent);ba
             <h3 class="section-title">Detail Acara</h3>
             <div class="kv">
               <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="2"/></svg>
-              <div><div class="k">Hari/Tanggal</div><div class="v"><strong id="kvTanggal">Senin–Rabu, 1–3 September 2025</strong></div></div>
+              <div><div class="k">Hari/Tanggal</div><div class="v"><strong id="kvTanggal">Rabu–Kamis, 3–4 September 2025</strong></div></div>
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
               <div><div class="k">Waktu</div><div class="v"><strong id="kvWaktu">07:30 – 13:00 WIB</strong></div></div>
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.1 7-12a7 7 0 10-14 0c0 5.9 7 12 7 12z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
@@ -236,21 +230,8 @@ blockquote.dua{margin:0;padding:10px 14px;border-left:4px solid var(--accent);ba
         <!-- ===== JADWAL KELOMPOK ===== -->
         <div class="col-12 section-collapsible" id="jadwal">
           <div class="card">
-            <h3 class="section-title">Jadwal Kelompok (1–3 September 2025)</h3>
+            <h3 class="section-title">Jadwal Kelompok (3–4 September 2025)</h3>
             <div id="jadwalWrap"></div>
-          </div>
-        </div>
-
-        <!-- ===== RUNDOWN PUNCAK ===== -->
-        <div class="col-12 section-collapsible" id="puncak">
-          <div class="card">
-            <h3 class="section-title">Rundown Puncak Seminar (8 September 2025)</h3>
-            <div class="scroll-x">
-              <table class="tbl stack" id="puncakTbl">
-                <thead><tr><th style="width:140px">Waktu</th><th>Kegiatan</th></tr></thead>
-                <tbody></tbody>
-              </table>
-            </div>
           </div>
         </div>
 
@@ -275,13 +256,13 @@ blockquote.dua{margin:0;padding:10px 14px;border-left:4px solid var(--accent);ba
   </div>
 
 <script>
-/* ====== DATA (dulunya di PHP) ====== */
+/* ====== DATA ====== */
 const DATA = {
   config: {
     title: 'Puncak Seminar Ilmiah MIPA & TIK Kelas X',
     tagline: 'Transformasi Sains dan Teknologi: Dari Gagasan Menjadi Inovasi',
     school: 'SMA Islam Al-Ma’ruf TP 2025/2026',
-    dates: ['2025-09-01','2025-09-02','2025-09-03'],
+    dates: ['2025-09-03','2025-09-04'],
     time_start: '07:30',
     time_end: '13:00',
     venue: 'GOR Moh Thaha, Jakarta Timur',
@@ -313,14 +294,14 @@ const DATA = {
       6: ['Naufal','Hadianto','Hassya','Emirsyah','Rafaza zefran','Fikry','Maudina','Irham','Radja','Rafasha','Muhammad azka'],
     },
     'Kelas Asy-Syatibi': {
-      7: ['Stevino Farrel','Muhammad caesar tsaqib','Hafidz Abdurraafi','Alif Abqary','Khirania Gendis Janitra','Dina Saffa Rahmadani',"Yunita Novriyani A'sing",'Ahmad Zaidan','Rizki Ramadhan','Kayla Nira','Daffaa Athaya'],
+      7: ['Stevino Farrel','Fredella Lusman','Hafidz Abdurraafi','Alif Abqary','Khirania Gendis Janitra','Dina Saffa Rahmadani',"Yunita Novriyani A'sing",'Ahmad Zaidan','Saputra','Kayla Nira','Daffaa Athaya'],
       8: ['Muhammad Devdan Abiya Lukito','Alim Maulana Husain','Audrey Sabian Permana','Naila Valerie Putri','Adelia Shaumy Nafeeza','Pascal Alfathir Wijaya','Sabrina Cut Azzahra','King Saddam El Hessam','Raffa Favian Mahardika','Fiqi Iman Surya Prakoso','Taufiq Al-Hakim'],
       9: ['Daffa Arizka Akbar','Haura Azizah Putri Ruseno','Irsyad Ibnu Aqil','Raffi Radhitya Fattah','Zeradi Muqsith Hutabarat','Azzahran faza Santoso','Muhammad Dwi Aqiel Caesar','Muhammad Baburrizqy','Aghniza Putri Prihantono','Fahmi Bahtiar'],
     },
     'Kelas Al-Mawardi': {
       10: ['Indah Adzra Rahmadita','Danish Radi Rezsakaputra','Andrew Ahzami Gosiman','Lingga Rafa Nabihan','Muhammad Keenan Athareyn','Rais Fattah Ceyda Elfaisal','Mahamantri Astar De Pralia','Alya Aprilia','Callysta Nabila Cahya','Hanan Sakinah Al Attas','Keenan Lintang Athaya'],
       11: ['Muhammad Muiz Ramadhany','Pavid Maulud','Alvin Aldiansyah','Syahazlina Ayu Bromantias','Zidane Fahrizal Anas','Darell Alghivari','Izzan Waldan Nitisara','Raka Arsya Athala','Muhammad Dwi Arian','Salwa Nabila Putri'],
-      12: ['Nasyifa Makaila Sahira','Fasahirah Auni Raissa','Fakhru Jaya Samudra','Aisyah Ardhia Soraya','Sarah Aulia Safira','Sutomo Ahmad Jaris','Muhammad Farid Alfarizi','Rio Attalla Asyarif','Althaf Syah Ghiyas','Anisya Syafriyanti','Alicia Firjatullah Nugroho'],
+      12: ['Nasyifa Makaila Sahira','Fasahirah Auni Raissa','Fakhru Jaya Samudra','Aisyah Ardhia Soraya','Sarah Aulia Safira','Sutomo Ahmad Jaris','Muhammad Farid Alfarizi','Rio Attalla Asyarif','Althaf Syah Ghiyas','Anisya Syafriyanti'],
     },
     'Kelas Az-Zahrawi': {
       13: ['Keyla','Anaya','Qalesya','Syahmi','Khairi','Gibran','Ravie','Rayi','Dhabit','Kahfi'],
@@ -329,10 +310,10 @@ const DATA = {
     }
   },
 
-  // Jadwal: TIK (Komputer/TIK) mulai 09.00 dari Kel 14 seperti permintaan
+  // 2 hari: Rabu (03) & Kamis (04). TIK mulai 09.00 dari Kel 14.
   jadwal: [
     {
-      judul:'Senin, 01 September 2025',
+      judul:'Rabu, 03 September 2025',
       labs:['Lab IPA (Kimia)','Lab TIK (Komputer)'],
       rows:[
         ['06.30–07.00',['Pembiasaan Asmaul Husna','Pembiasaan Asmaul Husna']],
@@ -358,14 +339,13 @@ const DATA = {
         ['12.15–12.30',['','Kel 10']],
         ['12.30–12.45',['','Kel 11']],
         ['12.45–13.00',['','Kel 12']],
-        ['13.00–13.10',['Kel 12','']],
         ['13.10–14.00',['Istirahat & Dzuhur','Istirahat & Dzuhur']],
         ['14.00–14.15',['','Kel 15']],
         ['14.15–15.40',['KBM','KBM']],
       ],
     },
     {
-      judul:'Selasa, 02 September 2025',
+      judul:'Kamis, 04 September 2025',
       labs:['Lab IPA (Fisika)','Lab TIK (TIK)'],
       rows:[
         ['06.30–07.00',['Pembiasaan Asmaul Husna','Pembiasaan Asmaul Husna']],
@@ -391,52 +371,11 @@ const DATA = {
         ['12.15–12.30',['','Kel 10']],
         ['12.30–12.45',['','Kel 11']],
         ['12.45–13.00',['','Kel 12']],
-        ['13.00–13.10',['','Kel 12']],
         ['13.10–14.00',['Istirahat & Dzuhur','Istirahat & Dzuhur']],
         ['14.00–14.15',['','Kel 15']],
         ['14.15–15.40',['KBM','KBM']],
       ],
-    },
-    {
-      judul:'Rabu, 03 September 2025',
-      labs:['Lab IPA (Biologi)'],
-      rows:[
-        ['06.30–07.00',['Pembiasaan Asmaul Husna']],
-        ['07.00–07.30',['Prepare presentasi']],
-        ['07.30–07.45',['Kel 1']],
-        ['07.45–08.00',['Kel 2']],
-        ['08.00–08.15',['Kel 3']],
-        ['08.15–08.30',['Kel 4']],
-        ['08.30–08.45',['Kel 5']],
-        ['08.45–09.00',['Kel 6']],
-        ['09.00–09.15',['Kel 7']],
-        ['09.15–09.25',['Kel 8']],
-        ['09.25–10.00',['Istirahat & Dhuha']],
-        ['10.00–10.15',['Kel 9']],
-        ['10.15–10.30',['Kel 10']],
-        ['10.30–10.45',['Kel 11']],
-        ['10.45–11.00',['Kel 12']],
-        ['11.00–11.15',['Kel 13']],
-        ['11.15–11.30',['Kel 14']],
-        ['11.30–11.45',['Kel 15']],
-        ['11.45–12.00',['Closing']],
-        ['12.30–15.40',['KBM']],
-      ],
     }
-  ],
-
-  rundownPuncak: [
-    ['06.30–07.00','Pembiasaan Asmaul Husna'],
-    ['07.30–08.00','Registrasi'],
-    ['08.00–08.15','Sambutan Ketua Pelaksana'],
-    ['08.15–08.30','Sambutan & Pembukaan oleh Kepala Sekolah'],
-    ['08.30–09.25','Keynote speech'],
-    ['09.25–10.30','Istirahat & Dhuha'],
-    ['10.30–11.30','Presentasi final'],
-    ['11.30–12.15','Pameran poster & produk'],
-    ['12.15–12.45','Penilaian juri & voting inovasi terbaik'],
-    ['12.45–13.00','Penghargaan & penutupan'],
-    ['13.00–15.40','KBM'],
   ],
 };
 
@@ -502,8 +441,7 @@ function indoTanggalRange(dates){
   // Agenda
   const agenda = qs('#agendaList');
   config.agenda.forEach(a=>{
-    const li = el('li','',
-      `<span class="dot"></span><span>${a}</span>`);
+    const li = el('li','', `<span class="dot"></span><span>${a}</span>`);
     agenda.appendChild(li);
   });
 
@@ -521,7 +459,7 @@ function indoTanggalRange(dates){
     ungg.appendChild(d);
   });
 
-  // Daftar Kelompok (tiap kelas = satu tabel; scroll-x)
+  // Daftar Kelompok
   const kelWrap = qs('#kelompokWrap');
   for(const kelas of Object.keys(DATA.kelompok)){
     const groups = DATA.kelompok[kelas];
@@ -529,17 +467,16 @@ function indoTanggalRange(dates){
     const table = el('table',{class:'tbl'});
     const thead = el('thead');
     const trh = el('tr');
-    trh.appendChild(el('th','')); // spacer agar mirip header
+    trh.appendChild(el('th','')); // spacer
     Object.keys(groups).sort((a,b)=>a-b).forEach(no=>{
       trh.appendChild(el('th',{class:'th-group'}, 'Kelompok '+no));
     });
     thead.appendChild(trh);
     const tbody = el('tbody');
-    // hitung baris terbanyak
     const max = Math.max(...Object.values(groups).map(v=>v.length));
     for(let i=0;i<max;i++){
       const tr = el('tr');
-      tr.appendChild(el('td',{}, String(i+1))); // nomor urut
+      tr.appendChild(el('td',{}, String(i+1)));
       Object.keys(groups).sort((a,b)=>a-b).forEach(no=>{
         tr.appendChild(el('td',{}, (groups[no][i]||'')));
       });
@@ -576,22 +513,13 @@ function indoTanggalRange(dates){
     jadWrap.appendChild(el('hr',{class:'sep'}));
   });
 
-  // Rundown puncak
-  const puncTbody = qs('#puncakTbl tbody');
-  DATA.rundownPuncak.forEach(r=>{
-    const tr = el('tr',{class:scheduleRowClass([r[1]])});
-    tr.appendChild(el('td',{'data-label':'Waktu'}, r[0]));
-    tr.appendChild(el('td',{'data-label':'Kegiatan'}, r[1]));
-    puncTbody.appendChild(tr);
-  });
-
-  // Guest name dari query ?to=
+  // Guest name ?to=
   const params = new URLSearchParams(location.search);
   const guest = params.get('to') || '';
   qs('#guestName').textContent = guest;
 
   // Open logic & tombol-tombol (exclusive)
-  const sectionIDs = ['kelompok','jadwal','puncak'];
+  const sectionIDs = ['kelompok','jadwal'];
   function openDetailsIfNeeded(){
     const hash = location.hash.replace('#','');
     if (hash === 'details' || sectionIDs.includes(hash)) {
@@ -623,18 +551,17 @@ function indoTanggalRange(dates){
   });
   qs('#btnKelompok').addEventListener('click', e=>{ e.preventDefault(); showExclusive('kelompok'); });
   qs('#btnJadwal').addEventListener('click', e=>{ e.preventDefault(); showExclusive('jadwal'); });
-  qs('#btnPuncak').addEventListener('click', e=>{ e.preventDefault(); showExclusive('puncak'); });
 })();
 </script>
 
-<!-- Schema.org Event (statis sederhana) -->
+<!-- Schema.org Event -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"Event",
   "name":"Puncak Seminar Ilmiah MIPA & TIK Kelas X",
-  "startDate":"2025-09-01T073000+07:00",
-  "endDate":"2025-09-03T130000+07:00",
+  "startDate":"2025-09-03T073000+07:00",
+  "endDate":"2025-09-04T130000+07:00",
   "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
   "eventStatus":"https://schema.org/EventScheduled",
   "description":"Transformasi Sains dan Teknologi: Dari Gagasan Menjadi Inovasi",
@@ -644,6 +571,3 @@ function indoTanggalRange(dates){
 </script>
 </body>
 </html>
-
-
-
